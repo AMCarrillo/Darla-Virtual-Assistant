@@ -8,8 +8,8 @@ import wolframalpha
 import webbrowser
 import sys
 
-app_id = 'RP3TEQ-UUE5G24J9W'
-client = wolframalpha.Client('RP3TEQ-UUE5G24J9W')
+app_id = 'YOUR_APP_ID'
+client = wolframalpha.Client('YOUR_APP_ID')
 
 listener = sr.Recognizer()
 engine = pyttsx3.init()
@@ -104,7 +104,7 @@ def run_darla():
 
         #If Darla doesn't understand the command or if you ask her something that she doesn't know
         else:
-            talk('Please say that command again Ana.')
+            talk('Please say that command again, Ana.')
 
 while True:
     run_darla()
